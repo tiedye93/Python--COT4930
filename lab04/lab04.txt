@@ -73,5 +73,5 @@ and the header information you received for in labs 1 and 2.
 Do not submit .txt or .out files.
 
 
-end of assignment 04.
+End of Assignment 04.
 
