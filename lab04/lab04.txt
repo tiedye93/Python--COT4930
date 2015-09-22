@@ -1,0 +1,77 @@
+
+
+COP 4930    Python Programming
+
+Assignment 04
+
+
+Please write a function called make_dict( ) that reads the lines in
+the file fl_cities.txt. Each line looks like
+
+    33050:Marathon
+
+where 33050 is the zip code for Marathon. The city name, Marathon, is
+the key you need to use in the dictionary.
+
+The second function, test_dict( ), uses the global dictionary you
+created in make_dict( ) and reads the lines in the file fl_maint.txt
+that maintains the dictionary and finds the zip codes for the cities.
+Each line in fl_maint.txt has the format (the field separator is - )
+
+    p-cities            # print the name of the cities in alphabetical
+                        # order along with their zip codes
+
+    f-Marathon          # find the zip code for Marathon; it is 33050
+
+    c-33394:Fort Lauderdale
+                        # change the zip code for Fort Lauderdale
+                        # from the original 33301 to 33394
+
+    anything other than c, f, and p are unknown commands, like
+
+    xyz-cities          # xyz is an unknown command
+    xx-cities           # xx  is an unknown command
+
+    Other items to keep in mind:
+
+    f-Orlando           # should display "city unknown" because we do
+                        # do not have Orlando and its zip code in the
+                        # file fl_cities.txt
+
+    c-99999:Orlando     # should display "city unknown" because the
+                        # command is trying to change the zip code for
+                        # a city that does not appear in the dictionary
+
+Note that any reasonable number of zip codes and cities may appear
+in the fl_cities.txt file.
+
+Note that any number of commands may appear in a file like fl_maint.txt
+that we will use to test your code.
+
+Please see lab04.out that contains the output when we run our program
+with the sample input file fl_maint.txt
+
+
+Penalties:
+    o no credit if your .py file does not run
+    o no credit if you do NOT use a Python dictionary
+    o no credit if you do NOT read an input file with the field
+      separator : like fl_cities.txt that shows zip code and city name
+    o no credit if your .py file does not produce the correct results
+      similar to what we produced in lab04.out for the sample input
+      file fl_maint.txt
+    o no credit if you do not create two functions as described; you may
+      create more than the two functions we asked you to write
+    o no credit for late assignments
+
+
+Please upload to the BlackBoard a .py file named
+
+    YourFAUID_lab04.py
+
+and the header information you received for in labs 1 and 2.
+Do not submit .txt or .out files.
+
+
+end of assignment 04.
+
