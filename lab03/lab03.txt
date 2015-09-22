@@ -1,0 +1,67 @@
+
+
+COP 4930    Python Programming
+
+Assignment 03
+
+
+Read about the algorithm for the Sieve of Eratosthenes at
+
+http://wiki.answers.com/Q/What_is_the_sieve_of_eratosthenes&altQ=Sieve_of_Eratosthenes_1_to_100
+
+See also
+
+	http://math.ucsd.edu/~wgarner/math187/unicity.pdf
+
+for a list of the prime numbers between 2 and 100.
+
+Please write a program, save it in YourFAUID_lab03.py, that asks for 
+an upper range of numbers to search for prime numbers. 
+Start at 2 and go up to the number the user asked you to use. 
+
+Your program should make sure that the upper bound when searching for the
+prime numbers is >= 2 and <= 300; otherwise your program should display
+a message that upper bound is out of range and terminate the execution.
+
+Write a function eratos that takes an int indicating the upper range of
+the numbers and returns a list of ints containing the prime numbers
+between 2 and n:
+
+    def eratos( n ) :
+
+The algorithm indicates that the first number, 2, is a prime and every
+multiple of if cannot be a prime, so "cross them out: 4, 6, 8, etc."
+When the algorithm indicates one should "cross out" a number, that is another
+way to say "remove that number from the list." 
+See the function remove( ) on 5.5.7, p54, textbook.
+
+Write a second function,
+
+	def print_primes( primes ) :
+
+where primes is the list of ints that erators( ) generated.
+This function should display 10 numbers per line and use 5 positions 
+for each number; if the user asked for an upper bound of 100, 
+your program should display
+
+    2    3    5    7   11   13   17   19   23   29
+   31   37   41   43   47   53   59   61   67   71
+   73   79   83   89   97
+
+
+Penalties:
+    o no credit if your .py file does not run
+    o no credit if you do NOT use a Python list
+    o no credit if your .py file does not produce the correct results
+      as listed above
+    o no credit if you do not create two functions as described
+    o no credit for late assignments
+
+
+Please upload to the BlackBoard a .py file named
+
+    YourFAUID_lab03.py
+
+
+end of assignment 03.
+
