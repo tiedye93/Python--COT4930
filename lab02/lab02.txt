@@ -1,0 +1,66 @@
+
+
+COP 4930    Python Programming
+
+Assignment 02
+
+
+Please read about the Fibonacci numbers at
+
+    http://en.wikipedia.org/wiki/Fibonacci_number
+
+then write a program, and save it in lab02.py, that asks how many
+numbers it should generate in the Fibonacci series.
+Remember that the first two numbers are
+
+    0 and 1
+
+so you already have two numbers in the series when you start.
+If the user asks for 4 numbers, your program should produce
+
+    0    1    1    2
+
+Please use five positions when you display each value of the
+Fibonacci series and display six values per line. That means
+if the user asked for 9 values your program should display
+
+    0    1    1    2    3    5
+    8   13   21
+
+Use a Python list to store the numbers.
+Print the numbers only after you create the list with as
+many Fibonacci numbers as the user asked for.
+Assume the user will NOT ask for less than 2 numbers and
+no more than 20 numbers.
+
+
+Please use a heading for your assignments like
+
+# COT 4930  Python Programming
+# name: your name
+# id  : your FAU ID
+# lab : 02
+
+...your Python code here...
+
+
+Penalties:
+    o no credit if your .py file does not run
+    o no credit if you  do NOT use a Python list
+    o no credit if your .py file does not produce the correct results
+      as listed above
+    o no credit for late assignments
+
+Each lab is due one week after it is assigned.
+Your solution has to be available in the BlackBoard
+no later than 11:59PM on the day it is due.
+It is acceptable to submit your assignment more than
+once. We will look only at your last version of the lab.
+
+
+Please upload to the BlackBoard a .py file named
+
+    YourFAUID_lab02.py
+
+
+end of assignment 02.
