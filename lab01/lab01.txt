@@ -1,0 +1,35 @@
+
+COP 4930    Python Program
+
+Assignment 01
+
+
+Please write a Python Program called lab01.py
+that reads a distance in miles and converts it
+to kilometers, and displays the result.
+
+Note: 1 mile is equivalent to 1.609 kms
+
+
+Please use a heading for your assignments like
+
+# COT 4930  Python Programming
+# name: your name
+# id  : your FAU ID
+# lab : 01
+
+your Python code
+
+
+Penalties:
+    o no credit if your .py file does not run
+    o no credit for late assignments
+
+
+Please upload to the BlackBoard a .py file named
+
+    YourFAUID_lab01.py
+
+
+end of assignment 01.
+
