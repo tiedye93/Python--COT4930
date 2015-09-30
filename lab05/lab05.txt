@@ -1,0 +1,69 @@
+
+
+COP 4930    Python Programming
+
+Assignment 05
+
+
+Please write a function called main( ) that reads the lines in
+the file bib.txt. Each line may have leading blanks.
+After the possible leading blanks there is a command like
+
+    \bibitem
+    \A
+    \B
+    etc.
+as in the input file bib.txt
+If the line begins with \bibitem, display
+    <doi>
+If the line is a blank line, display
+    </doi>
+to indicate the end of the doi (digital object identification).
+The last line of bib.txt is a blank line.
+
+Please write a second function commands( ) that accepts an input
+line main( ) read from bib.txt:
+
+    def commands( line ) :
+
+The function commands( ) has to use a dictionary where the keys (indices)
+are commands like "\\A", "\\Y", "\\B", etc. as they appear in bib.txt
+and the corresponding values should be "author", "year", "book", etc.
+
+commands( line ) has to
+    o   remove trailing periods or commas that may appear in line
+    o   display "+++ unknown:" followed by the input line to flag
+        unknown commands;
+        an unknown command is any command other than \A, \B, \R, \P,
+        \J, and \Y
+
+Remember that any command, like \A, has to appear as "\\A" in your
+program because a backslash (\) is an escape sequence; when you need
+to match a backslash you have to use two backslashes.
+
+Please see lab05.out that contains the output when we run our program
+with the sample input file bib.txt
+
+
+Penalties:
+    o no credit if your .py file does not run
+    o no credit if you do NOT use a Python dictionary
+    o no credit if you do NOT read the input file bib.txt
+    o no credit if your .py file does not produce the correct results
+      similar to what we produced in lab05.out for the sample input
+      file bib.txt
+    o no credit if you do not create two functions as described; you may
+      create more than the two functions we asked you to write
+    o no credit for late assignments
+
+
+Please upload to the BlackBoard a .py file named
+
+    YourFAUID_lab05.py
+
+and the header information you received for in labs 1 and 2.
+Do not submit .txt or .out files.
+
+
+end of assignment 05.
+

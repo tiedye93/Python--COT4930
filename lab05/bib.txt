@@ -1,0 +1,38 @@
+\bibitem{Akcelik:2003:HFA}
+ \A V. Akcelik.
+\R High-resolution forward and inverse earthquake modeling on terascale computers.
+  \J Proceedings of ACM/IEEE SC2003, 
+\Y 2003.
+
+ \bibitem{An:2008:OCF}
+\A S. S. An.
+	\R Optimizing cubature for efficient integration of subspace deformations.
+\J ACM Trans. on Graphics,
+	\Y 2008.
+
+\bibitem{Baraff:1998:LSI}
+\A D. Baraff.
+\R Large Steps in Cloth Simulation.
+	\J Proc. of ACM SIGGRAPH 98,
+\Y 1998.
+\X an invalid command here.
+
+\bibitem{Barbic:2007:RRL}
+\A J. Barbic.
+\B Real-time Reduced Large-Deformation Models and Distributed Contact.
+\P Carnegie Mellon University, 
+\Y 2007.
+
+ \bibitem{Chadwick:2009:HS}
+\A J. N. Chadwick.
+\R Harmonic Shells: A practical nonlinear sound model for near-rigid thin shells.
+  \F another invalid command here.
+\J ACM Transactions on Graphics,
+  \Y 2009.
+
+\bibitem{Lawson:1974:SLS}
+\A C. L. Lawson.
+\B Solving Least Square Problems.
+\P Prentice Hall, Englewood Cliffs, NJ, 
+ \Y 1974.
+
