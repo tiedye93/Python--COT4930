@@ -3,7 +3,7 @@
 # ID  : tbourque2012
 # Lab : 05
 
-
+#using another method not related to the assignment
 #-----------------------------------------
 
 bib = { }
@@ -56,4 +56,5 @@ def commands(line):
         else:
             print("<\doi>")
 main()
+ 
 
