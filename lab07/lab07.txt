@@ -1,0 +1,53 @@
+
+
+COP 4930    Python Programming
+
+Assignment 07
+
+
+Please write a function called main( ) that creates an object of type
+DlList (as in p07.py for week 08) and then reads the lines in the file llist.txt.
+Each line may have leading or trailing blanks.
+After the possible leading blanks there is a command like
+
+    i  abc          # insert the string abc in a doubly-linked list
+    p               # print a doubly-linked list
+    r  abc          # remove the node that contains abc the doubly-linked list,
+                    # if it is present
+
+as in the input file llist.txt
+The comments above are not part of the llist.txt file.
+
+Use the classes SLNode and DLNode we discussed in class.
+Modify the insert method in the class DLList to insert a string in the
+doubly-linked list while maintaing the list in alphabetical order.
+Do not invoke any sorting method to sort the linked list.
+The insert method should maintain the linked list sorted at all times.
+Add a remove method to the class DLList to remove the node that contains the
+string that follows the r command. If there is no node with the string that
+follows the r command, remove should not do anything.
+
+Please see llist.out that contains the output when we run our program
+with the sample input file llist.txt
+
+
+Penalties:
+    o no credit if your .py file does not run
+    o no credit if you do NOT use the classes SLNode, DLNode, and DLList
+    o no credit if you do not use a doubly-linked list
+    o no credit if you do NOT read the input file llist.txt
+    o no credit if your .py file does not produce the correct results
+      similar to what we produced in llist.out for the sample input
+      file llist.txt
+    o no credit for late assignments
+
+
+Please upload to the BlackBoard a .py file named
+
+    YourFAUID_lab07.py
+
+and the header information you received for in labs 1 and 2.
+Do not submit .txt or .out files.
+
+end of assignment 07.
+
