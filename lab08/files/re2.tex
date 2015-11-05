@@ -1,0 +1,62 @@
+
+\chapter{re -- Regular Expressions}
+
+\section{re -- Regular expression operations}
+
+This module provides regular expression
+matching operations similar to those found in Perl.
+
+Both patterns and strings to be searched
+can be Unicode strings as well as 8-bit
+strings. However, Unicode strings and
+8-bit strings cannot be mixed: that is,
+you cannot match an Unicode string with
+a byte pattern or vice-versa; similarly,
+when asking for a substitution, the replacement string must
+be of the same type as both the pattern and the search string.
+
+
+\subsection{Regular Expression Syntax}
+
+A regular expression (or RE) specifies
+a set of strings that matches it; the
+functions in this module let you check
+if a particular string matches a given
+regular expression (or if a given regular
+expression matches a particular string,
+which comes down to the same thing).
+
+Some characters, like \verb+'|'+ or \verb+'('+, are
+special. Special characters either stand
+for classes of ordinary characters, or
+affect how the regular expressions around
+them are interpreted. Regular expression
+pattern strings may not contain null bytes,
+but can specify the null byte using a \verb+\number+
+notation such as \verb+'\x00'+.
+
+The special characters are:
+
+\begin{description}
+
+\item[\texttt{'.'}]
+(Dot.) In the default mode, this matches
+any character except a newline. If the
+DOTALL flag has been specified, this matches
+any character including a newline.
+
+\item[\texttt{'\$'}]
+Matches the end of the string or just
+before the newline at the end of the string,
+and in MULTILINE mode also matches before
+a newline. \verb+foo+ matches both \verb+'foo'+ and
+\verb+'foobar'+, while the regular expression
+\verb+foo$+ matches only \verb+foo'+. More interestingly,
+searching for \verb+foo.$+ in \verb+'foo1\nfoo2\n'+
+matches \verb+'foo2'+ normally, but \verb+'foo1'+ in
+MULTILINE mode; searching for a single
+\verb+$+ in \verb+'foo\n'+ will find two (empty) matches:
+one just before the newline, and one at the end of the string.
+
+\end{description}
+
