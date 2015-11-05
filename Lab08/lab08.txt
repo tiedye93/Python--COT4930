@@ -1,0 +1,67 @@
+
+
+COP 4930    Python Programming
+
+Assignment 08
+
+
+Please write a function called main( ) that reads one of the .tex input
+available in the folder called files.
+
+For example, files/re4.tex contains
+
+    This is an itemized list:
+
+    \begin{itemize}
+    \item one
+    \item two
+    \end{itemize}
+
+That is the LaTeX file that produced pdf/re4.pdf
+You can open a pdf file using Adobe Reader.
+Your program should convert a LaTeX file like files/re4.tex that produced
+pdf/re4.pdf and convert it to HTML. That is, your program needs to read
+files/re4.tex and produce files/re4.html
+
+You can click on files/re4.html to see that the output is equivalent to
+the one in pdf/re4.pdf
+
+Your program should handle the following LaTeX commands and convert them
+to HTML:
+    LaTeX                   HTML
+
+    \chapter{ ... }         <H1> ... </H1>
+    \section{ ... }         <H2> ... </H2>
+    \subsection{ ... }      <H3> ... </H3>
+
+    \begin{description}     <DL>
+    \item[xxxx] something   <DD>xxxx something</DD>
+    \end{description}       </DL>
+
+    \begin{itemize}         <UL>
+    \item something         <LI>something</LI>
+    \end{itemize}           </UL>
+
+    \verb+'a'+              <TT>'a'</TT>
+
+
+Penalties:
+    o no credit if your .py file does not run
+    o no credit if you do NOT read the .tex input files from files; your
+      program should read only file at a time
+    o no credit if your .py file does not produce the correct results
+      similar to what we produced in files/*.html
+    o no credit for late assignments
+
+
+Please upload to the BlackBoard a .py file named
+
+    YourFAUID_lab08.py
+
+and the header information you received for in labs 1 and 2.
+Do not submit .tex or .html files.
+
+This assignment is due on Saturday, 11/14, at 11:59PM.
+
+end of assignment 08.
+
