@@ -63,5 +63,4 @@ Do not submit .tex or .html files.
 
 This assignment is due on Saturday, 11/14, at 11:59PM.
 
-end of assignment 08.
-
+end of assignment 08
