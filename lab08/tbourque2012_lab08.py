@@ -26,61 +26,20 @@ def main( ):
         itemize_e = r"\\end{([^}]+)}"
         verb = r"\\verb{([^}])}" #Not sure yet
         
-        if line.find( "\\chapter" ) != -1:
+       
+        line = re.sub( chapter, r"<H1>\1</H1>", line )
+        line = re.sub( section, r"<H2>\1</H2>", line )
+        line = re.sub( subsection, r"<H3>\1</H3>", line )
+        line = re.sub( description_b, r"<DL>", line )
+        line = re.sub( item1, r"<DD>\1</DD>", line )
+        line = re.sub( description_e, r"</DL>", line )       
+        line = re.sub( itemize_b, r"<UL>", line )
+        line = re.sub( item2, r"<LI>\1</LI>", line )
+        line = re.sub( itemize_e, r"</UL>", line )   
+        line = re.sub( verb, r"<TT>\1</TT>", line )
+        
             
-            new_line = re.sub( chapter, r"<H1>\1</H1>", line )
-            wfile.write( new_line )
-            
-        elif line.find( "\\section" ) != -1:
-            
-            new_line = re.sub( section, r"<H2>\1</H2>", line )
-            wfile.write( new_line )
-            
-        elif line.find( "\\subsection" ) != -1:
-            
-            new_line = re.sub( subsection, r"<H3>\1</H3>", line )
-            wfile.write( new_line )
-            
-        elif line.find( "\\begin{description}" ) != -1:
-            
-            new_line = re.sub( description_b, r"<DL>", line )
-            wfile.write( new_line )
-            
-        elif line.find( "\\item[" ) != -1:
-            
-            new_line = re.sub( item1, r"<DD>\1</DD>", line )
-            wfile.write( new_line )
-            print(new_line)
-            
-        elif line.find( "\\end{description}" ) != -1:
-            
-            new_line = re.sub( description_e, r"</DL>", line )
-            wfile.write( new_line )
-            
-        elif line.find( "\\begin{itemize}" ) != -1:
-            
-            new_line = re.sub( itemize_b, r"<UL>", line )
-            wfile.write( new_line )
-            
-        elif line.find( "\\item" ) != -1:
-            
-            new_line = re.sub( item2, r"<LI>\1</LI>", line )
-            wfile.write( new_line )
-            
-        elif line.find( "\\end{itemize}" ) != -1:
-            
-            new_line = re.sub( itemize_e, r"</UL>", line )
-            wfile.write( new_line )
-            
-        elif line.find( "\\verb" ) != -1:
-            
-            new_line = re.sub( verb, r"<TT>\1</TT>", line )
-            wfile.write( new_line )
-            print(new_line)
-            
-        else:
-            
-            wfile.write( line )
+        wfile.write( line )
         
     rfile.close( )
     wfile.close( )
