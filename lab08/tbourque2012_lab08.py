@@ -24,7 +24,9 @@ def main( ):
         itemize_b = r"\\begin{([^}]+)}"
         item2 = r"\\it{([^}]+)}"
         itemize_e = r"\\end{([^}]+)}"
-        verb = r"\\verb{([^}])}" #Not sure yet
+        verb1 = r"\\verb\W(\W+)\W\W" #Not sure yet
+        verb2 = r"\\verb\W\W(\w*)\W"
+        verb3 = r"\\verb\W(\W*\w*\W)\W"
         
        
         line = re.sub( chapter, r"<H1>\1</H1>", line )
@@ -36,8 +38,9 @@ def main( ):
         line = re.sub( itemize_b, r"<UL>", line )
         line = re.sub( item2, r"<LI>\1</LI>", line )
         line = re.sub( itemize_e, r"</UL>", line )   
-        line = re.sub( verb, r"<TT>\1</TT>", line )
-        
+        line = re.sub( verb1, r"<TT>\1</TT>", line )
+        line = re.sub( verb2, r"<TT>\1</TT>", line )
+        line = re.sub( verb3, r"<TT>\1</TT>", line )
             
         wfile.write( line )
         
