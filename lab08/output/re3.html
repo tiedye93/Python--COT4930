@@ -58,5 +58,25 @@ MULTILINE mode; searching for a single
 <TT>$</TT> in <TT>'foo\n'</TT> will find two (empty) matches:
 one just before the newline, and one at the end of the string.
 
+\pagebreak
+<DD>[ ]</DD>
+Used to indicate a set of characters. In a set:
+
+<DL>
+<LI> Characters can be listed individually,</LI>
+e.g. [amk] will match <TT>'a'</TT>, <TT>'m'</TT>, or <TT>'k'</TT>.
+
+<LI> Ranges of characters can be indicated</LI>
+by giving two characters and separating
+them by a <TT>'-'</TT>, for example <TT>[a-z]</TT> will
+match any lowercase ASCII letter, <TT>[0-5][0-9]</TT>
+will match all the two-digits numbers
+from 00 to 59, and [0-9A-Fa-f] will match
+any hexadecimal digit. If - is escaped
+(e.g. <TT>[a\-z]</TT>) or if it is placed as the
+first or last character (e.g. <TT>[a-]</TT>),
+it will match a literal <TT>'-'</TT>.
+</DL>
+
 </DL>
 
